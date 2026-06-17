@@ -25,7 +25,7 @@ if __name__ == "__main__":
     
     # 2. Preparar los datos
     prep = DataPreparation()
-    X_train, X_test, y_train, y_test = prep.load_and_prepare_data('data/open_rate_dataset.csv')
+    X_train, X_test, y_train, y_test = prep.load_and_prepare_data('data/raw/open_rate_dataset.csv')
     
     print(f"Datos preparados: {X_train.shape[0]} registros de entrenamiento.")
 

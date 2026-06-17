@@ -33,7 +33,7 @@ class DataSetBuilder:
 
         df = pd.DataFrame(data)
         # Asegúrate de que la carpeta 'data' exista
-        df.to_csv('data/open_rate_dataset.csv', index=False)
+        df.to_csv('data/raw/open_rate_dataset.csv', index=False)
         print("Dataset generado con éxito en 'data/open_rate_dataset.csv'")
 
         
