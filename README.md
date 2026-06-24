@@ -11,6 +11,7 @@ Desarrollar un pipeline de Machine Learning para predecir si un usuario abrirá 
 ##### MLflow
 
 ## Estructura del proyecto
+```text
 MLOPS/
 │
 ├── data/
@@ -18,12 +19,15 @@ MLOPS/
 │   │   └── open_rate_dataset.csv
 │   └── Contruir_DataSet.py
 │
+├── mlruns/
+│
 ├── data_preparation.py
 ├── train_models.py
 ├── pyproject.toml
 ├── poetry.lock
 ├── README.md
 └── TEAM.md
+```
 
 ## Instalación
 ### Clonar el repositorio:
@@ -63,34 +67,23 @@ Consultar artefactos generados.
 Se evaluaron dos algoritmos de clasificación:
 - Logistic Regression
 - Random Forest
-
+```text
 ===== RESULTADOS =====
-
 LogisticRegression
-
 accuracy: 0.6150
-
 precision: 0.5882
-
 f1: 0.6091
 
-
 RandomForest
-
 accuracy: 0.6350
-
 precision: 0.6038
-
 recall: 0.6737
-
 f1: 0.6368
 
-
 MEJOR MODELO: RandomForest
-
 F1 = 0.6368
-
 ======================
+```
 
 Los experimentos fueron registrados en MLflow para facilitar la comparación de métricas.
 
