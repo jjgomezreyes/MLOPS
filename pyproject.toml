@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mlops-open-rate"
+version = "0.1.0"
+description = "Modelo de clasificación con MLflow"
+authors = ["Mauricio Gaviria"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.3"
+numpy = "^2.3"
+scikit-learn = "^1.7"
+mlflow = "^3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
