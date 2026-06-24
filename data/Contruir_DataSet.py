@@ -28,12 +28,22 @@ class DataSetBuilder:
             'segment': np.random.choice(segments, n)
         }
 
-        prob_open = (data['historical_open_rate'] * 0.6) + (1 - data['days_since_last_open']/30 * 0.4)
-        data['target_opened'] = (prob_open > 0.5).astype(int)
+        prob_open = (
+            data['historical_open_rate'] * 0.5 +
+            (1 - data['days_since_last_open']/30) * 0.3 +
+            (data['historical_push_count'] < 20) * 0.2
+        )
+
+        prob_open = np.clip(prob_open, 0, 1)
+
+        data['target_opened'] = (
+            np.random.rand(n) < prob_open
+        ).astype(int)
 
         df = pd.DataFrame(data)
+        
+        print(df["target_opened"].value_counts())
+
         # Asegúrate de que la carpeta 'data' exista
         df.to_csv('data/raw/open_rate_dataset.csv', index=False)
         print("Dataset generado con éxito en 'data/open_rate_dataset.csv'")
-
-        
