@@ -67,6 +67,7 @@ Consultar artefactos generados.
 Se evaluaron dos algoritmos de clasificación:
 - Logistic Regression
 - Random Forest
+
 ```text
 ===== RESULTADOS =====
 LogisticRegression
