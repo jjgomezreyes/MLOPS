@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  build_dataset:
+    cmd: python data_preparation.py
+    deps:
+    - path: data_preparation.py
+      hash: md5
+      md5: 08be855a281a9620c69293e8c5e6829f
+      size: 1068
+    outs:
+    - path: data/raw/open_rate_dataset.csv
+      hash: md5
+      md5: aeb59a87c28a5080bb42dc2e2f998e35
+      size: 55522

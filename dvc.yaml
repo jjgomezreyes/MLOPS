@@ -1,0 +1,7 @@
+stages:
+  build_dataset:
+    cmd: python data_preparation.py
+    deps:
+    - data_preparation.py
+    outs:
+    - data/raw/open_rate_dataset.csv
