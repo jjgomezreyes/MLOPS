@@ -1,3 +1,5 @@
+Prueba
+
 # Proyecto MLOps - Clasificación de Apertura de Notificaciones
 ## Objetivo
 Desarrollar un pipeline de Machine Learning para predecir si un usuario abrirá una notificación push utilizando técnicas de clasificación supervisada.
