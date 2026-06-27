@@ -1,18 +1,19 @@
-[tool.poetry]
-name = "mlops-open-rate"
+[project]
+name = "mlops"
 version = "0.1.0"
-description = "Modelo de clasificación con MLflow"
-authors = ["Mauricio Gaviria"]
-package-mode = false
+description = ""
+authors = [
+    {name = "John Cruz",email = "jfcruz.ibp@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>2.3.0,<3.0)",
+    "dvc (>=3.67.1,<4.0.0)",
+    "scikit-learn (>=1.9.0,<2.0.0)"
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-pandas = "^2.3"
-numpy = "^2.3"
-scikit-learn = "^1.7"
-mlflow = "^3.1"
-dvc = "^3.67.1"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
