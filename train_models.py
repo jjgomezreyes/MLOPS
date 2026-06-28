@@ -55,7 +55,7 @@ def main():
 
     X_train, X_test, y_train, y_test = (
         DataPreparation.load_and_prepare_data(
-            "data/raw/open_rate_dataset.csv"
+            "data/raw/session_data.csv"
         )
     )
 

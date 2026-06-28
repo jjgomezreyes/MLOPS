@@ -1,3 +1,11 @@
 /config.local
 /tmp
 /cache
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# MLflow local logs and artifacts
+mlruns/
+mlruns.db
